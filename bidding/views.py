@@ -14,12 +14,7 @@ class ProfileRetrieveUpdate(generics.RetrieveUpdateAPIView):
 
     def get_object(self):
         # lookup_field is ignored here
-        try:
-            profile = self.request.user.profile
-        except Profile.DoesNotExist:
-            raise NotFound()
-
-        return profile
+        return self.request.user.profile
 
 
 class ItemList(generics.ListAPIView):
