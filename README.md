@@ -35,6 +35,6 @@ Credentials stored in the db are as follows:
 
     admin:admin
 
-    user1:\*?1234\*?
+    user1:*?1234*?
 
-    user2:\*?1234\*?
+    user2:*?1234*?
